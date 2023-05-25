@@ -1,4 +1,4 @@
-# projet-html
+# WatchSynced 
 
 ## Membre du Groupe
 * Mohamed Aziz Lahdheri
