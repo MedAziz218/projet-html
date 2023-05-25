@@ -1,0 +1,135 @@
+/* ------------------- */
+/* task list  */
+.task-list{
+  display: flex;
+  flex-direction: column;
+  outline-style:solid;outline-color:#808080;padding:1px 1px;
+  outline-width: thin;
+  background-color: rgba(150,150,150,.25);
+  border-radius: 0.25rem;
+}
+.task-element .overlay * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+.task-element{
+  display: flex;
+  flex-direction:row; 
+  margin-bottom: 0rem;
+  width: 100%;
+}
+
+.playing{
+  background-color: hsla(359, 100%, 57%, 0.395);
+ 
+}
+.yt-title{
+  color:#969696;
+}
+
+.playing .yt-title{
+  color:#ffffff;
+}
+.clear-btn-div{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  align-items: center;
+  align-content: center;
+}
+.yt-title {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+/* ------------------- */
+
+.task-element{
+  position: relative;
+}
+.task-element::after{
+  border-style: solid;
+  opacity: 1;
+}
+
+
+.task-element .thumbnail{
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  margin: 0px;
+  max-width: 320px;
+  min-width: 150px;
+  height: 100%;
+  width : auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 12px;
+  
+}
+
+.task-element .overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: 1;
+  background-color: #000000a2;
+  transition: all 0.3s ease;
+
+}
+.task-element:hover .overlay{
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+
+.wrapper{
+  display: flex;
+  /* border-style: solid; */
+  /* border-color: red; */
+  max-width: 3rem;
+  min-width: 2.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+  background-color:#00000000;
+  cursor: pointer;
+  
+ 
+}
+.task-element:hover .wrapper{
+  display: flex;
+  opacity: 1;
+  /* transition: all 0.5s ease; */
+  background-color: linear-gradient(
+    90deg,
+    rgba(100, 149, 237,1), rgba(255, 0, 255,1)
+  )
+
+}
+
+#no-media-info{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  background-color: #000000e6;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}

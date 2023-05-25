@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style3.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <title>Contact Us</title>
+</head>
+
+
+
+<body>
+
+
+
+  <!--NAV BAR-->
+  <section class="header">
+    <nav>
+      <a href="index.html" class="logo">WATCHSYNCED</a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./auth_pages/sign_up.php">Signup</a></li>
+          <li><a href="./auth_pages/log_in.php">Login</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <img src="img/menu-btn.png" alt="menu" class="menu">
+    </nav>
+    <div class="contact-main-text">
+      <h1>We'd love to hear from you <span style="color: #042f9c;">!</span></h1>
+      <div class="conta">
+        <button class="butn btn1" id="bot">Need Help ?</button>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!--BUTTON TAKE YOU TO CONTACT-->
+    <script>
+      document.getElementById("bot").addEventListener("click", function () {
+        window.location.href = "#conta";
+      });
+    </script>
+  </section>
+
+
+
+  <!-- BACKGROUND -->
+  <section>
+    <div class="image">
+      <img src="img/zgeTuV.jpg" class="tv" id="tv"/>
+      <img src="img/z.png" class="cover" id="cover" />
+    </div>
+  </section>
+
+
+
+
+
+  <p class="p"><br><br><br><br></p>
+
+
+
+
+  <!--MAIN+REVIEWS-->
+  <section class="about">
+    <div class="container reveal">
+      <div class="cards">
+        <div class="text-card">
+          <h3 style="color: #24418b;text-shadow:
+          -0.5px -0.5px 0 #fff,
+          0.5px -0.5px 0 #fff,
+          -0.5px 0.5px 0 #fff,
+          0.5px 0.5px 0 #fff;padding-left: 25px;margin-top: 30px;">Thanks for using our site!</h3>
+          <p style="text-align: start;padding: 25px;" class="par">If you have any questions, comments, or feedback about
+            our
+            site or your experience watching videos together with others, please don't hesitate to get in touch.<br>
+            Our team is here to help and we're always looking for ways to improve your viewing experience.
+          </p>
+        </div>
+        <div class="text-card">
+          <p style="padding: 25px;text-align: start;" class="par">
+            Whether you're having trouble syncing up with others, or you just want to share your thoughts on a
+            particular video or feature, we're all ears.<br>
+            You can reach us by filling out the contact form below, or by sending an email to [insert email address].
+            <br>We'll do our best to get back to you as soon as possible.
+          </p>
+        </div>
+      </div>
+  </section>
+
+
+
+  <p class="p"><br><br></p>
+
+
+
+
+  <!--CONTACT FORM-->
+  <div class="container">
+    <div class="contact-box" id="conta">
+      <div class="left"></div>
+      <div class="right">
+        <h2>Contact Us</h2>
+        <input type="text" class="field" placeholder="Your Name">
+        <input type="text" class="field" placeholder="Your Email">
+        <input type="text" class="field" placeholder="Phone">
+        <textarea placeholder="Message" class="field"></textarea>
+        <button class="btn">Send</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <p class="p"><br><br><br></p>
+
+
+
+
+
+  <!-- FOOTER-->
+  <footer class="footer">
+    <div class="container1">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul style="color: #ffff;">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Upgrade To Premium</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul style="color: #ffff;">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order status</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Address</h4>
+          <div class="adr">
+            123,10th Block<br>FA18, Ensi<br>La Manouba, Tunisia
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!--SCRIPT FOR RESPONSIVE NAVBAR-->
+  <script>
+    const menuHamburger = document.querySelector(".menu")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('mobile-menu')
+    })
+  </script>
+
+
+
+
+  <!-- SCRIPT TO ANIMATE PARALLAX -->
+  <script>
+    let cover = document.getElementById('cover');
+    let tv = document.getElementById('tv');
+
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY;
+      tv.style.top = value * 0.4 + 'px';
+    })
+  </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
