@@ -127,11 +127,11 @@ if (isset($_POST["button"])) {
         $mail->isSMTP();
         $mail->Host='smtp.gmail.com';
         $mail->SMTPAuth=true;
-        $mail->Username='syncedwatch@gmail.com'; //mail name 
-        $mail->Password='tnguokkikwyxzxoj';//mail password
+        $mail->Username=''; //mail name 
+        $mail->Password='';//mail password
         $mail->SMTPSecure='ssl';
         $mail->Port=465;
-        $mail->setFrom('syncedwatch@gmail.com','watch synced');
+        $mail->setFrom('','watch synced');
 
         try{
             $mail->addAddress($email);
