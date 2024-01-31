@@ -79,11 +79,11 @@ if (isset($_POST["resend"])){
     $mail->isSMTP();
     $mail->Host='smtp.gmail.com';
     $mail->SMTPAuth=true;
-    $mail->Username='syncedwatch@gmail.com';
-    $mail->Password='tnguokkikwyxzxoj';
+    $mail->Username='';
+    $mail->Password='';
     $mail->SMTPSecure='ssl';
     $mail->Port=465;
-    $mail->setFrom('syncedwatch@gmail.com','watch synced');
+    $mail->setFrom('','watch synced');
     $mail->addAddress($_SESSION["email"]);
     $mail->isHTML(true);
     $mail->Subject = 'signing up!';
