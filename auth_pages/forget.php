@@ -69,7 +69,7 @@ if (isset($_POST["button"])) {
     $mail->Password='';
     $mail->SMTPSecure='ssl';
     $mail->Port=465;
-    $mail->setFrom('syncedwatch@gmail.com','watch synced');
+    $mail->setFrom('','watch synced');
     $mail->addAddress($_SESSION["email"]);
     $mail->isHTML(true);
     $mail->Subject = 'Password Reset !';
