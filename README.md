@@ -1,6 +1,6 @@
 # WatchSynced 
 
-### Ce projet a été réalisé dans le cadre de mon cours de web à [l'ENSI](https://ensi.rnu.tn/).
+### Ce projet a été réalisé dans le cadre d'un cours de web à [l'ENSI](https://ensi.rnu.tn/).
 
 ## Membre du Groupe
 * Mohamed Aziz Lahdheri
